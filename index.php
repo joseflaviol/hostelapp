@@ -40,6 +40,13 @@
             <h2>From Belo Horizonte or São Paulo</h2>
             <p>Via BR-381 to Campanha-MG, then west on BR-267.</p>
           </div>
+          <br>
+          <center><h1>Famous tourism quotes</h1></center>
+          <div class="text-box">
+            <p>"Once a year, go some place you've never been before" - Dalai Lama</p>
+            <br>
+            <p>"Take only memories, leave only footprints" - Chief Seattle</p>
+          </div>
         </aside>
       </main>
       <footer>
