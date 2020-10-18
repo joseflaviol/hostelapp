@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Guests</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="navlist">
+        <li class="navitem"><a class="active navlink" href="#">Sparkling Water Hostel</a></li>
+        <li class="navitem"><a class="navlink" href="guests.html">Guests</a></li>
+        <li class="navitem"><a class="navlink" href="#">Rooms</a></li>
+        <li class="navitem"><a class="navlink" href="#">Reservations</a></li>
+        <li class="navitem"><a class="navlink" href="#">Contact</a></li>
+        <li class="navitem fr"><a class="navlink" href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="ml-5">
+        <h1>Guests</h1>
+        <a href="add_guest.html">Add new guest</a>
+      </div>
+      <div class="w-75 fl guests-table">
+        <div class="grid fr">
+          <div>#</div>
+          <div><b>Phone Number</b></div>
+          <div><b>First</b></div>
+          <div><b>Last</b></div>
+          <div><b>Email Address</b></div>
+        </div>
+        <div class="grid fr" id="guests"></div>
+        <div class="ml-5 mt-5" id="showing"></div>
+        <div id="buttons" class="fr mt-5">
+          <button class="btn btn-primary" type="button" name="button" id="btn_previous">Previous</button>
+          <button class="btn btn-primary" type="button" name="button" id="btn_next">Next</button>
+        </div>
+      </div>
+      <div class="ml-3 fl showing-options">
+        <form id="form_search">
+          <input type="text" name="search" class="w-75">
+          <button type="submit" name="button" class="w-20 btn btn-primary">Find</button>
+        </form>
+        <div class="mt-5">
+          <select id="sort_opt" class="w-75">
+            <option value="0">Default (ID ascendent)</option>
+            <option value="1">ID descendent</option>
+            <option value="2">First Name ascendent</option>
+            <option value="3">First Name descendent</option>
+            <option value="4">Last Name ascendent</option>
+            <option value="5">Last Name descendent</option>
+          </select>
+          <button type="button" name="button" class="w-20 btn btn-primary" id="btn_sort">Sort</button>
+        </div>
+      </div>
+    </main>
+    <script src="js/Hostel.js" charset="utf-8"></script>
+    <script src="js/guest_page.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Add Guest</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="navlist">
+        <li class="navitem"><a class="active navlink" href="#">Sparkling Water Hostel</a></li>
+        <li class="navitem"><a class="navlink" href="guests.html">Guests</a></li>
+        <li class="navitem"><a class="navlink" href="#">Rooms</a></li>
+        <li class="navitem"><a class="navlink" href="#">Reservations</a></li>
+        <li class="navitem"><a class="navlink" href="#">Contact</a></li>
+        <li class="navitem fr"><a class="navlink" href="login.html">Login</a></li>
+      </ul>
+    </nav>
+    <form id="form_add_guest" class="mt-5">
+      <fieldset>
+        <legend>Add Guest</legend>
+  			<ul class="fs">
+  				<li>
+  					<label for="fname">First Name:</label>
+  					<input type="text" name="fname" required>
+  				</li>
+  				<li>
+  					<label for="lname">Last Name:</label>
+  				  <input type="text" name="lname" required>
+  				</li>
+          <li>
+  					<label for="eaddress">Email:</label>
+  				  <input type="email" name="eaddress" required>
+  				</li>
+          <li>
+  					<label for="pnumber">Phone:</label>
+  				  <input type="text" name="pnumber" required>
+  				</li>
+          <li>
+  					<label for="address">Address:</label>
+  				  <input type="text" name="adress" required>
+  				</li>
+          <li>
+  					<label for="country">Country:</label>
+  				  <input type="text" name="country" required>
+  				</li>
+          <li>
+  					<label for="state">State:</label>
+  				  <input type="text" name="state" required>
+  				</li>
+  				<li class="button">
+  					<button type="submit" class="btn btn-success">Create</button>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='guests.html'">Return to all guests</button>
+  				</li>
+  			</ul>
+      </fieldset>
+    </form>
+    <script src="js/add_guest_page.js" charset="utf-8"></script>
+  </body>
+</html>
