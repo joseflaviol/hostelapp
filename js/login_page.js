@@ -15,7 +15,7 @@ validate = () => {
     if (msg != "") {
         alert(msg);
     } else {
-        alert("Welcome");
+        window.location.href = 'guests.html'
     }
 }
 
