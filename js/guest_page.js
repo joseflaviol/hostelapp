@@ -39,6 +39,7 @@ show_guests = (initial_range, final_range) => {
 
 search = () => {
     if (hostel.search(form_search.search.value)) {
+        set_range_vars();
         div_showing.innerHTML = `Showing ${initial_range + 1} to ${final_range} of ${number_of_guests} results for: ${form_search.search.value}`;
     } else {
         alert("No results");
