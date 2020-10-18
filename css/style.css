@@ -48,6 +48,10 @@ body {
   margin-top: 5px;
 }
 
+.mt-10 {
+  margin-top: 10px;
+}
+
 .ml-3 {
   margin-left: 3px;
 }
@@ -58,6 +62,10 @@ body {
 
 .ml-5 {
   margin-left: 5px;
+}
+
+.ml-20 {
+  margin-left: 20px;
 }
 
 .mr-3 {
@@ -194,6 +202,8 @@ article {
 }
 
 .grid {
+  background-color: white;
+  border: 1px solid;
   display: grid;
   grid-template-columns: repeat(5, 200px);
 }
@@ -220,12 +230,6 @@ article {
   background-color: white;
 }
 
-.t {
-  height: 200px;
-  border: 1px solid;
-  border-radius: 25px;
-  background-color: white;
-}
 
 main {
   padding-bottom: 2.5rem;
