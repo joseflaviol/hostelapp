@@ -22,14 +22,16 @@
         <a href="add_guest.html">Add new guest</a>
       </div>
       <div class="w-75 fl guests-table">
-        <div class="grid fr">
-          <div>#</div>
-          <div><b>Phone Number</b></div>
-          <div><b>First</b></div>
-          <div><b>Last</b></div>
-          <div><b>Email Address</b></div>
+        <div class="t">
+          <div class="grid fr">
+            <div>#</div>
+            <div><b>Phone Number</b></div>
+            <div><b>First</b></div>
+            <div><b>Last</b></div>
+            <div><b>Email Address</b></div>
+          </div>
+          <div class="grid fr" id="guests"></div>
         </div>
-        <div class="grid fr" id="guests"></div>
         <div class="ml-5 mt-5" id="showing"></div>
         <div id="buttons" class="fr mt-5">
           <button class="btn btn-primary" type="button" name="button" id="btn_previous">Previous</button>
@@ -42,7 +44,7 @@
           <button type="submit" name="button" class="w-20 btn btn-primary">Find</button>
         </form>
         <div class="mt-5">
-          <select id="sort_opt" class="w-75">
+          <select id="sort_opt" class="w-75 bg-white">
             <option value="0">Default (ID ascendent)</option>
             <option value="1">ID descendent</option>
             <option value="2">First Name ascendent</option>

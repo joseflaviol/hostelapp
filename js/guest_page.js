@@ -32,12 +32,14 @@ show_guests = (initial_range, final_range) => {
                                   <div>${item.emailAddress}</div>`;
     });
 
-    div_showing.innerHTML = `Showing ${initial_range + 1} to ${final_range} of ${number_of_guests} guests.`;
+    if (form_search.search.value == "") {
+        div_showing.innerHTML = `Showing ${initial_range + 1} to ${final_range} of ${number_of_guests} guests.`;
+    }
 }
 
 search = () => {
     if (hostel.search(form_search.search.value)) {
-        //alert(`Showing results for: ${form_search.search.value}`);
+        div_showing.innerHTML = `Showing ${initial_range + 1} to ${final_range} of ${number_of_guests} results for: ${form_search.search.value}`;
     } else {
         alert("No results");
     }
@@ -71,14 +73,18 @@ next_page = () => {
 
 update_buttons = () => {
     if (initial_range == 0) {
+        btn_previous.classList.add('disabled');
         btn_previous.disabled = true;
     } else {
+        btn_previous.classList.remove('disabled');
         btn_previous.disabled = false;
     }
 
     if (final_range == number_of_guests) {
+        btn_next.classList.add('disabled');
         btn_next.disabled = true;
     } else {
+        btn_next.classList.remove('disabled');
         btn_next.disabled = false;
     }
 }

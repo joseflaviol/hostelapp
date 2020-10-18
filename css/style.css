@@ -216,6 +216,17 @@ article {
   border-radius: 25px;
 }
 
+.bg-white {
+  background-color: white;
+}
+
+.t {
+  height: 200px;
+  border: 1px solid;
+  border-radius: 25px;
+  background-color: white;
+}
+
 main {
   padding-bottom: 2.5rem;
 }
@@ -228,4 +239,9 @@ footer {
   background-color: #a4b0be;
   color: white;
   text-align: center;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
